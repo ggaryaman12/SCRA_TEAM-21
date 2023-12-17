@@ -7,6 +7,7 @@ import SongDesc from "./SongDesc/SongDesc";
 import LyricsBox from "./LyricsBox/LyricsBox";
 import AudioPlayer from "./AudioPlayer/AudioPlayer";
 import TradeSuccessModal from "../Layout/Modal/TradeSuccessModal";
+import pic from "./CoverCard/pic 5.jpeg"
 
 export default function SongInfo(props) {
 	const prop = useParams();
@@ -51,7 +52,7 @@ export default function SongInfo(props) {
 							<div className="row justify-content-center mt-5">
 								<AudioPlayer
 									source={`https://ipfs.infura.io/ipfs/${_song.hashes.songHash}`}
-									songCoverURL={`https://ipfs.infura.io/ipfs/${_song.hashes.imgHash}`}
+									songCoverURL={pic}
 									isPlaying={isPlaying}
 									playPause={handlePlayPause}
 									lyricsPresent={_song.hashes.lyricsHash.length > 0 ? true : false}

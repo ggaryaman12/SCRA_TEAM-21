@@ -1,13 +1,13 @@
 import React from "react";
 import web3 from "web3";
 import "./trendingCard.css";
-
+import pic from "../Library/LibraryUtils/SongPages/pic.gif"
 export default function TrendingCard(props) {
 	return (
 		<div className="trending_card">
 			<div className="row trending_card_row justify-content-center mb-3">
 				<div className="col-12 p-0">
-					<img className="trending_album_cover" src={`https://ipfs.infura.io/ipfs/${props.song.hashes.imgHash}`} width="100%" alt="album cover" />
+					<img className="trending_album_cover" src={pic} width="100%" alt="album cover" />
 				</div>
 			</div>
 

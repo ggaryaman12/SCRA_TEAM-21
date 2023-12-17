@@ -3,6 +3,60 @@ import { Link } from "react-router-dom";
 import "./songPages.css";
 import JumpToStart from "../JumpToStart";
 import JumpToEnd from "../JumpToEnd";
+import img_1 from "./pic 1.jpeg";
+import img_2 from "./pic 2.jpg";
+import img_3 from "./pic 3.jpeg";
+import img_4 from "./pic 4.jpg";
+import img_5 from "./pic 5.jpeg";
+import img_6 from "./pic 6.jpg";
+
+
+
+
+const imagesList = [
+	{
+	  id: 1,
+	  src: img_1,
+	  alt: "Image 1",
+	},
+	{
+	  id: 2,
+	  src: img_2,
+	  alt: "Image 2",
+	},
+	{
+		id: 1,
+		src: img_3,
+		alt: "Image 1",
+	  },
+	  {
+		id: 2,
+		src: img_4,
+		alt: "Image 2",
+	  },
+	  {
+		id: 1,
+		src: img_5,
+		alt: "Image 1",
+	  },
+	  {
+		id: 2,
+		src: img_6,
+		alt: "Image 2",
+	  },
+	  {
+		id: 1,
+		src: img_5,
+		alt: "Image 1",
+	  },
+	  {
+		id: 2,
+		src: img_6,
+		alt: "Image 2",
+	  },
+	
+	
+  ];
 
 export default function SongPages(props) {
 	// STATE MANAGEMENT
@@ -33,12 +87,12 @@ export default function SongPages(props) {
 
 	// CREATING INDIVIDUAL CARD ELEMENTS
 	for (let i = n - 1; i >= 0; i--) {
-		// NOTE: Do not use album-cover-div and album-cover classes
+		// NOTE: Do not use album-cover-div and album-cover c
 		imagesArray.push(
 			<div className="song_card_component" key={i}>
 				<Link to={`/song-info/${props.songNFTs[i].id}`}>
 					<div className="library_cards_cover_div justify-content-center align-items-center">
-						<img src={`https://ipfs.infura.io/ipfs/${props.songNFTs[i].hashes.imgHash}`} alt="song cover" />
+						<img src={imagesList[i].src} alt="song cover"/>
 						<div className="text-break">
 							<p>#{`${props.songNFTs[i].id}`}</p>
 							<span>{`${props.songNFTs[i].songName}`}</span>

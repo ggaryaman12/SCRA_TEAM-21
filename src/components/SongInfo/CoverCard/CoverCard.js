@@ -5,7 +5,7 @@ import "./coverCard.css";
 import Socials from "./Socials/Socials.js";
 import ConnectMetamask from "../../Utils/ConnectMetamask/ConnectMetamask";
 import Tooltip from "../../Utils/Tooltip/Tooltip";
-
+import pic from "./pic 5.jpeg";
 export default function CoverCard(props) {
 	const previousOwners = props.song.sales.previousOwners;
 	const previousPrices = props.song.sales.previousPrices;
@@ -36,7 +36,7 @@ export default function CoverCard(props) {
 			<div className="cover_card glass_effect glass_effect_border">
 				<div className="row cover_card_row justify-content-center mb-4">
 					<div className="col-12 p-0">
-						<img className="album_cover" src={props.songCoverURL} width="100%" alt="album cover" />
+						<img className="album_cover" src={pic} width="100%" alt="album cover" />
 
 						<button className="play-btn" onClick={props.playPause}>
 							{props.isPlaying ? <i className="fa fa-pause"></i> : <i className="fa fa-play"></i>}

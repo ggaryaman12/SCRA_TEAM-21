@@ -4,7 +4,7 @@ import "./lyricsBox.css";
 export default function LyricsBox(props) {
 	const [lyrics, setLyrics] = useState("");
 
-	if (props.lyricsURL !== "error") fetch(props.lyricsURL).then((response) => response.text().then((text) => setLyrics(text)));
+	//if (props.lyricsURL !== "error") fetch(props.lyricsURL).then((response) => response.text().then((text) => setLyrics(text)));
 
 	return (
 		<div className="lyrics_container">

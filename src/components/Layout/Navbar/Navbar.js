@@ -29,7 +29,7 @@ export default function Navbar(props) {
 			</div>
 			<div className="d-flex w-50 order-0">
 				<Link to={"/"}>
-					<img src={logo_navbar} alt="logo" className="mb-md-1 mb-3 cursor_ptr nav_logo" width="150" />
+					<img src={logo_navbar} alt="logo" className="mb-md-1 mb-3 cursor_ptr nav_logo" width="100" />
 				</Link>
 			</div>
 			<div className="justify-content-center order-2" id="nav_center_links">

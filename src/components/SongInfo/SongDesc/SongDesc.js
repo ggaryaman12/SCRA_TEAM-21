@@ -5,7 +5,7 @@ import Tooltip from "../../Utils/Tooltip/Tooltip";
 export default function SongDesc(props) {
 	// Fetch Background
 	const [background, setBackground] = useState("");
-	if (props.backgroundURL !== "error") fetch(props.backgroundURL).then((response) => response.text().then((text) => setBackground(text)));
+	//if (props.backgroundURL !== "error") fetch(props.backgroundURL).then((response) => response.text().then((text) => setBackground(text)));
 
 	return (
 		<div className="song_description_box">
